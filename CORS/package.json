@@ -1,0 +1,16 @@
+{
+  "name": "cors",
+  "version": "1.0.0",
+  "description": "Namaste frontend system design practice ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start ": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

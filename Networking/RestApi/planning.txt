@@ -1,0 +1,15 @@
+TODO application
+
+http://localhost:1010/api/todos
+http://localhost:1010/api/users
+
+features (CRUD)         Methods
+- create            POST
+- read              GET
+- update            PUT/PATCH
+- delete            DELETE
+
+HEAD
+OPTIONS 
+CONNECT
+TRACE

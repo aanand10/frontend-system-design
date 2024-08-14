@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS example</title>
+</head>
+
+<body>
+    <h1>Fetch with cors example </h1>
+    <button onclick="logList()">fetch data</button>
+    <p id="addData"></p>
+
+    <script>
+        console.log("working");
+        async function logList() {
+
+            try {
+                const response = await fetch("http://192.168.10.122:5010/list");
+                const listPromise = response.json();
+
+                listPromise.then(promise => {
+                    console.log(promise);
+                    const dataContainer = document.getElementById("addData");
+                    dataContainer.innerText = promise[0].name;
+                    console.log(dataContainer);
+
+                }
+                )
+            } catch (error) {
+                console.error(error)
+            }
+        }
+
+    </script>
+</body>
+
+</html>
